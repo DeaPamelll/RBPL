@@ -220,7 +220,7 @@ if (!$data) {
 
   <!-- Header -->
   <div class="header px-3">
-    <a href="index.php"><i class="bi bi-arrow-left fs-4" style="color: white;"></i></a>
+    <a href="admin-dashboard.php"><i class="bi bi-arrow-left fs-4" style="color: white;"></i></a>
   </div>
 
   <!-- Konten Utama -->

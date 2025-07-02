@@ -3,7 +3,7 @@ session_start();
 include 'controller/koneksi.php';
 
 if (empty($_SESSION['user'])) {
-    header("location:admin-login.php?pesan=belum_login");
+    header("location:index.php?pesan=belum_login");
     exit;
 }
 
@@ -175,7 +175,7 @@ $userData = $result->fetch_assoc();
     <a href="controller/logout.php"><button class="btn logout-btn">Keluar</button></a>
 
     <div class="bottom-nav">
-        <a href="index.php">
+        <a href="admin-dashboard.php">
           <i class="bi bi-house"></i>
           <span>Utama</span>
         </a>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(empty($_SESSION['user'])){
-    header("location:admin-login.php?pesan=belum_login");
+    header("location:index.php?pesan=belum_login");
     exit;
 }
 include 'controller/koneksi.php';
@@ -227,7 +227,7 @@ $cari = isset($_GET['cari']) ? $_GET['cari'] : '';
 </div>
 
     <div class="bottom-nav">
-        <a href="index.php">
+        <a href="admin-dashboard.php">
           <i class="bi bi-house"></i>
           <span>Utama</span>
         </a>

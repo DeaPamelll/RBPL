@@ -3,7 +3,7 @@ session_start();
 include "controller/koneksi.php";
 
 if(empty($_SESSION['user'])){
-    header("location:admin-login.php?pesan=belum_login");
+    header("location:index.php?pesan=belum_login");
     exit;
 }
 
@@ -295,7 +295,7 @@ $total_produk = mysqli_fetch_assoc($q_produk)['total'] ?? 0;
   </div>
 
   <div class="bottom-nav">
-        <a href="index.php">
+        <a href="admin-dashboard.php">
           <i class="bi bi-house"></i>
           <span>Utama</span>
         </a>

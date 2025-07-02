@@ -3,7 +3,7 @@ session_start();
 include "controller/koneksi.php";
 
 if(empty($_SESSION['user'])){
-    header("location:admin-login.php?pesan=belum_login");
+    header("location:index.php?pesan=belum_login");
     exit;
 }
 

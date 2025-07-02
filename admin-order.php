@@ -3,7 +3,7 @@ session_start();
 include "controller/koneksi.php";
 
 if(empty($_SESSION['user'])){
-    header("location:admin-login.php?pesan=belum_login");
+    header("location:index.php?pesan=belum_login");
     exit;
 }
 
@@ -289,7 +289,7 @@ $query = mysqli_query($koneksi, "
 
 
   <div class="bottom-nav">
-        <a href="index.php">
+        <a href="admin-dashboard.php">
           <i class="bi bi-house"></i>
           <span>Utama</span>
         </a>

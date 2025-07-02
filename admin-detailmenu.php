@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (empty($_SESSION['user'])) {
-    header("Location: admin-login.php?pesan=belum_login");
+    header("Location: index.php?pesan=belum_login");
     exit;
 }
 include 'controller/koneksi.php';
