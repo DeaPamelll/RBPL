@@ -175,7 +175,7 @@ $userData = $result->fetch_assoc();
     <a href="controller/logout.php"><button class="btn logout-btn">Keluar</button></a>
 
     <div class="bottom-nav">
-        <a href="admin-dashboard.php">
+        <a href="index.php">
           <i class="bi bi-house"></i>
           <span>Utama</span>
         </a>

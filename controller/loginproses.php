@@ -25,7 +25,7 @@ if ($result->num_rows === 1) {
     // Verifikasi password (pastikan Anda menyimpan password hash!)
     if ($password === $user['password']) {
         $_SESSION['user'] = $user;
-        header("Location: ../admin-dashboard.php"); // redirect ke halaman dashboard
+        header("Location: ../index.php"); // redirect ke halaman dashboard
         exit;
     } else {
         $_SESSION['error'] = "Password salah.";

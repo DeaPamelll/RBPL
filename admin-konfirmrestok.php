@@ -76,7 +76,7 @@
         </div>
 
         <div class="footer">
-          <a href="admin-dashboard.php">
+          <a href="index.php">
             <button class="btn" style="width: 280px;">Selesai</button>
           </a>
         </div>

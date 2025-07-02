@@ -179,7 +179,7 @@ $cari = isset($_GET['cari']) ? $_GET['cari'] : '';
     <div class="category-title"><?php echo $kategori; ?></div>
     <div class="product-grid">
       <?php while($row = $result->fetch_assoc()): ?>
-        <a href="admin-detailproduk.php?id=<?php echo $row['ID_Barang']; ?>&tipe=produk" class="text-decoration-none text-dark">
+        <a href="admin-detail.php?id=<?php echo $row['ID_Barang']; ?>&tipe=produk" class="text-decoration-none text-dark">
           <div class="product-card">
             <img src="data:<?php echo $row['tipe_mime']; ?>;base64,<?php echo base64_encode($row['foto_barang']); ?>" alt="<?php echo htmlspecialchars($row['Nama_barang']); ?>" />
             <div class="product-name"><?php echo htmlspecialchars($row['Nama_barang']); ?></div>
@@ -227,7 +227,7 @@ $cari = isset($_GET['cari']) ? $_GET['cari'] : '';
 </div>
 
     <div class="bottom-nav">
-        <a href="admin-dashboard.php">
+        <a href="index.php">
           <i class="bi bi-house"></i>
           <span>Utama</span>
         </a>

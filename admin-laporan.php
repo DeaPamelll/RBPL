@@ -295,7 +295,7 @@ $total_produk = mysqli_fetch_assoc($q_produk)['total'] ?? 0;
   </div>
 
   <div class="bottom-nav">
-        <a href="admin-dashboard.php">
+        <a href="index.php">
           <i class="bi bi-house"></i>
           <span>Utama</span>
         </a>

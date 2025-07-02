@@ -289,7 +289,7 @@ $query = mysqli_query($koneksi, "
 
 
   <div class="bottom-nav">
-        <a href="admin-dashboard.php">
+        <a href="index.php">
           <i class="bi bi-house"></i>
           <span>Utama</span>
         </a>
